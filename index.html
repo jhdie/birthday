@@ -1,0 +1,1310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FFE7F3">
+<meta name="format-detection" content="telephone=no,email=no,address=no">
+<title>陈浩杰，生日快乐</title>
+<meta name="description" content="给陈浩杰的生日小惊喜：一间会发光的卡通小屋、一顶会闪的蛋糕，和一封写给他的信。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="陈浩杰，生日快乐">
+<meta property="og:description" content="点开收下这份小惊喜，记得吹蜡烛许愿。">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiNGRkU3RjMiLz48cGF0aCBkPSJNMTQgNDBoMzZ2MTNhNSA1IDAgMCAxLTUgNUgxOWE1IDUgMCAwIDEtNS01eiIgZmlsbD0iI0ZGN0VBOCIgc3Ryb2tlPSIjM0IyQjRGIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNMTQgNDBjNC4yIDQuMiA4LjQgNC4yIDEyLjYgMHM4LjQtNC4yIDEyLjYgMCA4LjQgNC4yIDEwLjggMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM0IyQjRGIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxyZWN0IHg9IjMwIiB5PSIyMiIgd2lkdGg9IjQiIGhlaWdodD0iMTUiIHJ4PSIyIiBmaWxsPSIjRkZGREY2IiBzdHJva2U9IiMzQjJCNEYiIHN0cm9rZS13aWR0aD0iMi42Ii8+PHBhdGggZD0iTTMyIDljMy4yIDMuNCAzLjYgNi40IDAgOS42LTMuNi0zLjItMy4yLTYuMiAwLTkuNnoiIGZpbGw9IiNGRkQzNEUiIHN0cm9rZT0iIzNCMkI0RiIgc3Ryb2tlLXdpZHRoPSIyLjYiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48L3N2Zz4=">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- 卡通字体：非阻塞加载，网络不通时会自动退回系统圆体/黑体，页面照常显示 -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" media="print" onload="this.media='all'">
+<style>
+  :root{
+    --ink:#3B2B4F;
+    --cream:#FFFDF6;
+    --pink:#FF7EA8;
+    --pink-d:#F2548A;
+    --yellow:#FFD34E;
+    --mint:#56D6B5;
+    --blue:#63C7FF;
+    --purple:#A78BFF;
+    --orange:#FF9F5A;
+    --font:"ZCOOL KuaiLe","Yuanti SC","幼圆","YouYuan","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{height:100%}
+  html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  body{
+    font-family:var(--font);
+    color:var(--ink);
+    overflow:hidden;
+    overscroll-behavior:none;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ===== 天空 ===== */
+  .sky{
+    position:fixed;inset:0;z-index:0;
+    background:
+      radial-gradient(80% 55% at 50% -5%, #FFFFFF 0%, rgba(255,255,255,0) 62%),
+      linear-gradient(180deg,#BEE9FF 0%,#D9EDFF 26%,#FFE7F3 62%,#FFF6DF 100%);
+  }
+  .clouds{position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+  .cloud{
+    position:absolute;background:#fff;border-radius:50px;opacity:.85;
+    filter:blur(.4px);
+  }
+  .cloud::before,.cloud::after{content:"";position:absolute;background:#fff;border-radius:50%}
+  .cloud::before{width:58%;height:150%;left:12%;top:-70%}
+  .cloud::after{width:44%;height:130%;right:10%;top:-52%}
+  .c1{width:190px;height:54px;left:6%;top:16%;animation:drift 26s ease-in-out infinite}
+  .c2{width:140px;height:40px;right:8%;top:26%;animation:drift 32s ease-in-out infinite reverse}
+  .c3{width:230px;height:62px;left:58%;top:8%;opacity:.7;animation:drift 38s ease-in-out infinite}
+  .c4{width:120px;height:36px;left:16%;bottom:14%;opacity:.6;animation:drift 30s ease-in-out infinite reverse}
+  @keyframes drift{0%,100%{transform:translateX(-16px)}50%{transform:translateX(22px)}}
+
+  /* 气球装饰 */
+  .balloon{
+    position:absolute;border-radius:50% 50% 48% 48%;
+    border:4px solid var(--ink);
+    background-image:radial-gradient(circle at 30% 26%, rgba(255,255,255,.92) 0 6px, rgba(255,255,255,0) 7px);
+    transform-origin:50% 120%;
+  }
+  .balloon::before{
+    content:"";position:absolute;left:50%;top:100%;
+    width:2px;height:64px;margin-left:-1px;
+    background:rgba(59,43,79,.35);
+    border-radius:2px;
+  }
+  .balloon::after{
+    content:"";position:absolute;left:50%;bottom:-7px;
+    width:9px;height:9px;margin-left:-4.5px;
+    background-color:inherit;
+    border:3px solid var(--ink);border-radius:2px;
+    transform:rotate(45deg);
+  }
+  .b1{left:6%;top:40%;width:56px;height:68px;background-color:var(--yellow);animation:floaty 5.4s ease-in-out infinite}
+  .b2{right:7%;top:30%;width:70px;height:84px;background-color:var(--mint);animation:floaty 6.8s ease-in-out infinite reverse}
+  .b3{right:20%;bottom:18%;width:44px;height:54px;background-color:var(--purple);opacity:.9;animation:floaty 7.6s ease-in-out infinite;animation-delay:-2.4s}
+  .b4{left:14%;bottom:24%;width:38px;height:46px;background-color:var(--blue);opacity:.85;animation:floaty 6.2s ease-in-out infinite;animation-delay:-1.2s}
+  @keyframes floaty{
+    0%,100%{transform:translateY(0) rotate(-3deg)}
+    50%{transform:translateY(-16px) rotate(3deg)}
+  }
+
+  /* 三角彩旗 */
+  .bunting{
+    position:absolute;left:0;top:-4px;width:100%;height:auto;
+    pointer-events:none;
+  }
+
+  /* 手绘小图案 */
+  .doodle{
+    position:absolute;overflow:visible;
+    animation:floaty 6s ease-in-out infinite;
+  }
+  .d-heart{left:20%;top:20%;width:36px;height:36px;animation-duration:5.2s}
+  .d-star{right:21%;top:32%;width:32px;height:32px;animation-duration:6.4s;animation-direction:reverse}
+  .d-spark{left:9%;top:54%;width:28px;height:28px;animation-duration:7.2s;animation-delay:-1.6s}
+  .d-flower{right:10%;bottom:32%;width:36px;height:36px;animation-duration:6.8s;animation-direction:reverse}
+  .d-cloud{left:27%;bottom:15%;width:44px;height:44px;animation-duration:8s;animation-delay:-2.8s;opacity:.9}
+  .d-star2{left:13%;top:66%;width:26px;height:26px;animation-duration:6.1s;animation-delay:-1.1s}
+  .d-heart2{right:16%;top:60%;width:28px;height:28px;animation-duration:7.4s;animation-direction:reverse;animation-delay:-.6s}
+  .d-spark2{left:28%;top:7%;width:24px;height:24px;animation-duration:5.8s;animation-delay:-2.2s}
+  .d-spark3{right:28%;bottom:16%;width:22px;height:22px;animation-duration:6.6s;opacity:.9}
+
+  /* 礼物盒 */
+  .deco-gift{position:absolute;bottom:3%;animation:floaty 7s ease-in-out infinite;pointer-events:none}
+  .g-left{left:3%;width:clamp(88px,9vw,124px)}
+  .g-right{right:3%;width:clamp(92px,9.6vw,132px);animation-direction:reverse;animation-duration:8s}
+
+  /* ====== 悬浮祝福气泡 ====== */
+  .bless{
+    position:absolute;z-index:1;
+    padding:9px 18px;
+    background:#FFFDF6;
+    border:3.5px solid var(--ink);
+    border-radius:16px;
+    box-shadow:0 5px 0 rgba(59,43,79,.14);
+    font-size:clamp(12px,2.35vw,18px);
+    letter-spacing:.1em;line-height:1;
+    white-space:nowrap;
+    color:var(--pink-d);
+    pointer-events:auto;cursor:pointer;
+    user-select:none;-webkit-user-select:none;
+    rotate:var(--r,0deg);
+    opacity:1;
+    animation:bFade .55s var(--bd,1s) ease-out backwards,
+              bBob var(--bt,6s) var(--bd,1s) ease-in-out infinite;
+    transition:scale .2s cubic-bezier(.2,1.6,.4,1), background .2s;
+    will-change:translate;
+  }
+  .bless::after{
+    content:"";position:absolute;
+    left:20px;bottom:-7px;
+    width:12px;height:12px;
+    background:#FFFDF6;
+    border-right:3.5px solid var(--ink);
+    border-bottom:3.5px solid var(--ink);
+    border-bottom-right-radius:3px;
+    rotate:45deg;
+  }
+  .bless:hover{scale:1.07;background:#FFF4DA}
+  .bless:hover::after{background:#FFF4DA}
+  .bless:active{scale:.95}
+  @keyframes bFade{from{opacity:0}to{opacity:1}}
+  @keyframes bBob{
+    0%,100%{translate:0 0}
+    24%{translate:0 -8px}
+    44%{translate:0 0}
+    62%{translate:0 -3px}
+    80%{translate:0 0}
+  }
+
+  .bless.t1{left:3%;top:11%;--r:-7deg;--bt:5.6s;--bd:1.05s}
+  .bless.t2{left:11.5%;top:31%;--r:5deg;--bt:6.2s;--bd:1.2s}
+  .bless.t3{left:2%;top:57%;--r:-4deg;--bt:5.2s;--bd:1.35s}
+  .bless.t4{left:4%;top:74%;--r:6deg;--bt:6.6s;--bd:1.5s}
+  .bless.t5{right:3%;top:9%;--r:6deg;--bt:5.9s;--bd:1.12s}
+  .bless.t6{right:11%;top:39%;--r:-5deg;--bt:5.4s;--bd:1.28s}
+  .bless.t7{right:2%;top:49%;--r:7deg;--bt:6.4s;--bd:1.42s}
+  .bless.t8{right:8%;top:71%;--r:-6deg;--bt:5.7s;--bd:1.56s}
+
+  canvas#fx{position:fixed;inset:0;width:100%;height:100%;z-index:2;pointer-events:none}
+
+  /* ===== 布局 ===== */
+  main{
+    position:fixed;inset:0;z-index:3;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    /* 顶部留出彩旗的高度（彩旗按 6.25vw 下垂），避免标题压到旗子 */
+    padding:calc(max(6.4vw,24px) + env(safe-area-inset-top,0px)) 16px
+            calc(clamp(14px,2.6vh,34px) + env(safe-area-inset-bottom,0px));
+    transform-origin:center center;
+    pointer-events:none;
+  }
+  /* 让气泡也能点到，同时空白处点击仍然撒彩纸 */
+  main > *{pointer-events:auto}
+
+  /* ===== 卡通贴纸标题 ===== */
+  .title{
+    display:flex;align-items:flex-end;justify-content:center;
+    gap:.16em;
+    font-size:clamp(44px,11.8vw,110px);
+    line-height:1;
+    font-weight:400;
+    letter-spacing:.02em;
+    padding:0 .5em;
+    filter:drop-shadow(0 6px 0 rgba(59,43,79,.14));
+  }
+  .l{
+    position:relative;
+    display:inline-block;
+    line-height:1;
+    z-index:0;
+    transform-origin:50% 90%;
+    opacity:0;
+  }
+  /* 白色贴纸底 */
+  .l::before{
+    content:attr(data-c);
+    position:absolute;left:0;top:0;z-index:-2;
+    line-height:1;
+    color:var(--cream);
+    -webkit-text-stroke:24px var(--cream);
+  }
+  /* 深色描边 */
+  .l::after{
+    content:attr(data-c);
+    position:absolute;left:0;top:0;z-index:-1;
+    line-height:1;
+    color:var(--ink);
+    -webkit-text-stroke:13px var(--ink);
+  }
+  .l:nth-child(1){--r:-5deg;--c:#FFD34E;--d:.06s;color:#FFD34E}
+  .l:nth-child(2){--r:3deg;--c:#FF7EA8;--d:.16s;color:#FF7EA8}
+  .l:nth-child(3){--r:-3deg;--c:#63C7FF;--d:.26s;color:#63C7FF}
+  .l:nth-child(4){--r:5deg;--c:#56D6B5;--d:.36s;color:#56D6B5}
+
+  .go .l{animation:pop .85s cubic-bezier(.2,1.7,.42,1) var(--d) forwards}
+  /* 落定后一直跳，注意关键帧里必须写 opacity:1，否则会回到 .l 的 opacity:0 而消失 */
+  .go .title.ready .l{animation:bob 1.9s calc(var(--d) * 1.7) cubic-bezier(.34,.75,.42,1) infinite}
+  @keyframes pop{
+    0%{opacity:0;transform:scale(.2) rotate(calc(var(--r) * 4)) translateY(30px)}
+    60%{opacity:1}
+    100%{opacity:1;transform:scale(1) rotate(var(--r)) translateY(0)}
+  }
+  @keyframes bob{
+    0%{opacity:1;transform:rotate(var(--r)) translateY(0) scale(1,1)}
+    16%{opacity:1;transform:rotate(calc(var(--r) * .45)) translateY(-16px) scale(.97,1.05)}
+    34%{opacity:1;transform:rotate(var(--r)) translateY(0) scale(1.06,.93)}
+    46%{opacity:1;transform:rotate(calc(var(--r) * .8)) translateY(-6px) scale(1,1)}
+    58%,100%{opacity:1;transform:rotate(var(--r)) translateY(0) scale(1,1)}
+  }
+
+  /* ===== 名字小旗 ===== */
+  .name-tag{
+    margin-top:clamp(16px,2.6vh,26px);
+    display:inline-flex;align-items:center;gap:10px;
+    padding:10px 26px;
+    background:var(--cream);
+    border:4px solid var(--ink);
+    border-radius:999px;
+    box-shadow:0 5px 0 rgba(59,43,79,.18);
+    font-size:clamp(15px,3.8vw,19px);
+    letter-spacing:.06em;
+    transform:rotate(-2deg);
+  }
+  .go .name-tag{animation:tagIn .7s .62s cubic-bezier(.2,1.6,.4,1) backwards,
+                            hop 2.6s 1.45s ease-in-out infinite}
+  .name-tag b{color:var(--pink-d);font-weight:400}
+  .name-tag i{
+    width:9px;height:9px;border-radius:50%;background:var(--yellow);
+    border:2.5px solid var(--ink);flex:none;
+  }
+  @keyframes tagIn{0%{opacity:0;transform:rotate(-2deg) scale(.7) translateY(10px)}100%{opacity:1;transform:rotate(-2deg) scale(1) translateY(0)}}
+
+  /* ===== 蛋糕 ===== */
+  .cake-wrap{
+    position:relative;
+    margin:clamp(10px,2vh,20px) 0 clamp(6px,1.6vh,16px);
+  }
+  .go .cake-wrap{animation:rise .9s .5s cubic-bezier(.2,1.5,.4,1) backwards}
+  @keyframes rise{0%{opacity:0;transform:translateY(46px) scale(.86)}100%{opacity:1;transform:none}}
+
+  .cake{
+    display:block;
+    width:clamp(258px,52vw,404px);
+    height:auto;
+    overflow:visible;
+    position:relative;z-index:1;
+    filter:drop-shadow(0 16px 0 rgba(59,43,79,.07));
+  }
+  .rays{
+    position:absolute;left:50%;top:50%;
+    width:186%;aspect-ratio:1;
+    transform:translate(-50%,-50%);
+    border-radius:50%;
+    background:conic-gradient(from 0deg,
+      rgba(255,240,190,.95) 0 7deg,
+      rgba(255,240,190,0) 7deg 24deg);
+    -webkit-mask:radial-gradient(circle, rgba(0,0,0,.85) 8%, rgba(0,0,0,.70) 34%, rgba(0,0,0,0) 68%);
+    mask:radial-gradient(circle, rgba(0,0,0,.85) 8%, rgba(0,0,0,.70) 34%, rgba(0,0,0,0) 68%);
+    animation:spin 90s linear infinite;
+    pointer-events:none;z-index:0;
+  }
+  @keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+  .cake-body{transform-origin:180px 300px;animation:sway 4.6s ease-in-out infinite}
+  @keyframes sway{
+    0%,100%{transform:translateY(0) rotate(-.8deg)}
+    50%{transform:translateY(-6px) rotate(.8deg)}
+  }
+
+  .flame{
+    transform-box:fill-box;transform-origin:50% 100%;
+    animation:flick .85s ease-in-out infinite;
+  }
+  .candle:nth-child(2) .flame{animation-delay:-.3s}
+  .candle:nth-child(3) .flame{animation-delay:-.55s}
+  @keyframes flick{
+    0%,100%{transform:scale(1) rotate(-2.5deg)}
+    35%{transform:scale(1.08,.93) rotate(2deg)}
+    70%{transform:scale(.95,1.06) rotate(-1deg)}
+  }
+  .cake.blown .flame{opacity:0;transform:scale(.15);animation:none;transition:opacity .3s,transform .3s}
+  .cake.blown .glow{opacity:0;transition:opacity .8s}
+
+  .smoke{opacity:0;transform-box:fill-box;transform-origin:50% 50%}
+  .cake.blown .smoke{animation:puff 2s ease-out forwards}
+  .cake.blown .smoke.s2{animation-delay:.14s}
+  .cake.blown .smoke.s3{animation-delay:.28s}
+  @keyframes puff{
+    0%{opacity:.75;transform:translateY(0) scale(.5)}
+    100%{opacity:0;transform:translateY(-54px) scale(2.6)}
+  }
+  .twinkle{transform-box:fill-box;transform-origin:50% 50%;animation:twk 2.4s ease-in-out infinite}
+  .twinkle.t2{animation-delay:-.8s}
+  .twinkle.t3{animation-delay:-1.5s}
+  .twinkle.t4{animation-delay:-.4s}
+  @keyframes twk{0%,100%{opacity:.35;transform:scale(.8)}50%{opacity:1;transform:scale(1.15)}}
+
+  /* ===== 按钮 ===== */
+  .btn{
+    position:relative;
+    padding:14px 40px;
+    font-family:var(--font);
+    font-size:clamp(15px,3.9vw,18px);
+    letter-spacing:.08em;
+    color:var(--cream);
+    background:var(--pink);
+    border:4px solid var(--ink);
+    border-radius:999px;
+    cursor:pointer;
+    box-shadow:0 6px 0 var(--ink), 0 12px 18px -8px rgba(59,43,79,.45);
+    transition:transform .12s ease, box-shadow .12s ease, background .25s;
+  }
+  .go .btn{animation:fadeUp .6s .95s cubic-bezier(.2,1.6,.4,1) backwards,
+                      hop 2.15s 1.6s ease-in-out infinite}
+  .btn:hover{background:#FF92B6;transform:translateY(-2px);box-shadow:0 8px 0 var(--ink),0 16px 22px -8px rgba(59,43,79,.5)}
+  .btn:active{transform:translateY(4px);box-shadow:0 2px 0 var(--ink),0 4px 10px -4px rgba(59,43,79,.4)}
+  .btn::after{
+    content:"";position:absolute;inset:-7px;border-radius:999px;
+    border:4px solid rgba(242,84,138,.5);
+    opacity:0;pointer-events:none;
+    animation:beat 2.6s 2.4s ease-out infinite;
+  }
+  @keyframes beat{
+    0%{transform:scale(.97);opacity:.85}
+    65%{transform:scale(1.14);opacity:0}
+    100%{transform:scale(1.14);opacity:0}
+  }
+
+  .hint{
+    margin-top:clamp(12px,2.2vh,20px);
+    font-size:clamp(11px,2.9vw,13px);
+    color:rgba(59,43,79,.55);
+    letter-spacing:.05em;
+  }
+  .go .hint{animation:fadeUp .6s 1.15s ease backwards,
+                        hop 3.1s 1.75s ease-in-out infinite}
+  @keyframes fadeUp{
+    0%{opacity:0;transform:translateY(14px) scale(.94)}
+    100%{opacity:1;transform:translateY(0) scale(1)}
+  }
+  /* 轻微上下浮动，用 translate 属性，不干扰 hover 的 transform */
+  @keyframes hop{
+    0%,100%{translate:0 0}
+    22%{translate:0 -6px}
+    44%{translate:0 0}
+    62%{translate:0 -2.5px}
+    80%{translate:0 0}
+  }
+  .hint b{color:var(--pink-d);font-weight:400;animation:pulse 1.8s ease-in-out infinite;display:inline-block}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+
+  /* ===== 音乐 ===== */
+  .music{
+    position:fixed;right:calc(16px + env(safe-area-inset-right,0px));top:calc(16px + env(safe-area-inset-top,0px));z-index:8;
+    width:46px;height:46px;border-radius:50%;
+    display:grid;place-items:center;
+    background:var(--cream);
+    border:4px solid var(--ink);
+    box-shadow:0 4px 0 var(--ink);
+    color:var(--ink);font-size:18px;cursor:pointer;
+    transition:transform .12s,box-shadow .12s,background .25s;
+  }
+  .music:active{transform:translateY(3px);box-shadow:0 1px 0 var(--ink)}
+  .music.on{background:var(--yellow)}
+  .music.on::after{
+    content:"";position:absolute;inset:-10px;border-radius:50%;
+    border:3px solid rgba(255,211,78,.75);
+    animation:ring 1.8s ease-out infinite;
+  }
+  @keyframes ring{0%{transform:scale(.85);opacity:.9}100%{transform:scale(1.35);opacity:0}}
+
+  /* ===== 卡片 ===== */
+  .overlay{
+    position:fixed;inset:0;z-index:12;
+    display:flex;align-items:center;justify-content:center;
+    padding:calc(20px + env(safe-area-inset-top,0px)) 20px
+            calc(20px + env(safe-area-inset-bottom,0px));
+    background:rgba(59,43,79,.30);
+    backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+    opacity:0;visibility:hidden;
+    transition:opacity .5s ease,visibility .5s;
+  }
+  .overlay.show{opacity:1;visibility:visible}
+  .card{
+    position:relative;
+    width:min(560px,100%);max-height:min(86vh,760px);
+    max-height:min(88svh,760px);
+    background:var(--cream);
+    border:5px solid var(--ink);
+    border-radius:26px;
+    box-shadow:0 12px 0 rgba(59,43,79,.16), 0 30px 50px -24px rgba(59,43,79,.5);
+    transform:translateY(30px) rotate(-1.5deg) scale(.94);
+    opacity:0;
+    transition:transform .6s cubic-bezier(.2,1.6,.4,1) .05s, opacity .5s ease .05s;
+    display:flex;overflow:visible;
+  }
+  .overlay.show .card{transform:translateY(0) rotate(-1.5deg) scale(1);opacity:1}
+  .card::before{
+    content:"";position:absolute;top:-16px;left:50%;
+    width:112px;height:30px;margin-left:-56px;
+    background:rgba(255,211,78,.92);
+    border:2.5px solid rgba(59,43,79,.22);
+    transform:rotate(-3deg);
+    z-index:3;
+  }
+  .card-scroll{
+    width:100%;max-height:min(86vh,760px);
+    max-height:min(88svh,760px);
+    overflow-y:auto;overscroll-behavior:contain;
+    border-radius:21px;
+    padding:clamp(30px,4.8vw,44px) clamp(22px,4.6vw,40px) clamp(26px,4vw,36px);
+  }
+  .card-scroll::-webkit-scrollbar{width:5px}
+  .card-scroll::-webkit-scrollbar-thumb{background:rgba(59,43,79,.22);border-radius:5px}
+
+  .card h2{
+    font-size:clamp(22px,5.2vw,30px);
+    font-weight:400;text-align:center;
+    color:var(--pink-d);
+    letter-spacing:.04em;
+    margin-bottom:6px;
+  }
+  .card .sub{
+    text-align:center;font-size:12px;color:rgba(59,43,79,.45);
+    letter-spacing:.22em;margin-bottom:22px;
+  }
+  .card p{
+    font-size:clamp(14px,3.6vw,15.5px);
+    line-height:2;
+    color:#4A3A5E;
+    margin-bottom:13px;
+    letter-spacing:.02em;
+  }
+  .card p.hi{
+    font-size:clamp(16px,4vw,18px);color:var(--ink);
+    display:inline-block;padding:2px 0;
+  }
+  .sign{
+    margin-top:20px;text-align:right;
+    font-size:13px;color:var(--pink-d);line-height:1.9;
+  }
+  .sign small{display:block;font-size:11px;color:rgba(59,43,79,.4);letter-spacing:.1em}
+  .dots{display:flex;justify-content:center;gap:6px;margin:16px 0 18px}
+  .dots i{width:8px;height:8px;border-radius:50%;border:2.5px solid var(--ink)}
+  .dots i:nth-child(1){background:var(--yellow)}
+  .dots i:nth-child(2){background:var(--pink)}
+  .dots i:nth-child(3){background:var(--blue)}
+  .dots i:nth-child(4){background:var(--mint)}
+
+  .actions{display:flex;gap:10px;justify-content:center;margin-top:26px;flex-wrap:wrap}
+  .ghost{
+    padding:11px 22px;border-radius:999px;
+    font-family:var(--font);font-size:13px;letter-spacing:.04em;
+    background:#fff;color:var(--ink);
+    border:3.5px solid var(--ink);
+    box-shadow:0 4px 0 var(--ink);
+    cursor:pointer;transition:transform .12s,box-shadow .12s,background .2s;
+  }
+  .ghost:hover{background:#FFF7DC}
+  .ghost:active{transform:translateY(3px);box-shadow:0 1px 0 var(--ink)}
+  .ghost.pri{background:var(--yellow)}
+  .ghost.pri:hover{background:#FFDE7A}
+
+  @media (max-width:1100px){
+    .d-cloud{display:none}
+    .doodle{opacity:.85}
+    .g-left{width:96px}
+    .g-right{width:100px}
+  }
+  @media (max-width:900px){
+    .doodle,.deco-gift{display:none}
+    .b3{display:none}
+    .d-spark,.d-heart2{display:block}
+    .d-spark{left:7%;top:auto;bottom:13%;width:26px;height:26px}
+    .d-heart2{right:8%;top:auto;bottom:19%;width:26px;height:26px}
+  }
+  @media (max-width:620px){
+    .b1{width:40px;height:48px;left:3%;top:34%}
+    .b2{width:46px;height:56px;right:3%;top:26%}
+    .b4{display:none}
+    .balloon::before{height:40px}
+    .bunting{top:-2px}
+  }
+  @media (max-height:720px){
+    .cake{width:clamp(190px,36vw,260px)}
+    .title{font-size:clamp(40px,10.5vw,86px)}
+    .name-tag{margin-top:10px;padding:7px 20px}
+    .hint{margin-top:8px}
+    .b3,.b4{display:none}
+  }
+  @media (max-height:640px){
+    .deco-gift{display:none}
+  }
+
+  /* ===== 悬浮祝福 · 屏宽适配 ===== */
+  @media (max-width:1100px){
+    .bless.t3,.bless.t7{display:none}
+  }
+  @media (max-width:820px){
+    .bless{
+      padding:7px 13px;border-width:3px;border-radius:13px;
+      font-size:clamp(11px,2.9vw,14px);
+      box-shadow:0 4px 0 rgba(59,43,79,.14);
+    }
+    .bless::after{width:10px;height:10px;border-width:3px;bottom:-6px;left:16px}
+    .bless.t2,.bless.t4,.bless.t6,.bless.t8{display:none}
+    .bless.t1{left:3.5%;top:7%;--r:-8deg}
+    .bless.t3{display:block;left:auto;right:3%;top:15.5%;--r:7deg}
+    .bless.t5{right:4.5%;top:auto;bottom:14%;--r:-6deg}
+    .bless.t7{display:block;left:5%;top:auto;bottom:6%;right:auto;--r:5deg}
+  }
+  @media (max-width:400px){
+    .bless{padding:6px 11px;font-size:11.5px;letter-spacing:.06em}
+  }
+  /* 手机横屏：空间太矮，收起气泡让位给蛋糕 */
+  @media (max-height:600px) and (orientation:landscape){
+    .bless{display:none}
+  }
+  /* 矮屏：整体压缩一档，保证蛋糕和按钮都完整可见 */
+  @media (max-height:540px){
+    main{padding-top:calc(8px + env(safe-area-inset-top,0px));padding-bottom:calc(8px + env(safe-area-inset-bottom,0px))}
+    .title{font-size:clamp(34px,7.2vw,58px)}
+    .name-tag{margin-top:6px;padding:5px 16px;font-size:13px;border-width:3px}
+    .cake-wrap{margin:4px 0 2px}
+    .cake{width:clamp(132px,23vh,190px)}
+    .btn{padding:9px 26px;font-size:14px;border-width:3px;box-shadow:0 4px 0 var(--ink),0 8px 12px -6px rgba(59,43,79,.4)}
+    .hint{margin-top:6px;font-size:11px}
+    .music{width:38px;height:38px;font-size:15px;top:calc(10px + env(safe-area-inset-top,0px));border-width:3px}
+  }
+  /* 手机竖屏：音乐按钮避开彩旗 */
+  @media (max-width:820px) and (min-height:541px){
+    .music{top:calc(46px + env(safe-area-inset-top,0px))}
+  }
+  /* 矮屏 / 小屏整体再收紧一点 */
+  @media (max-height:720px){
+    .hint{margin-top:8px}
+    .name-tag{padding:7px 20px;margin-top:10px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .bless,.doodle,.balloon,.deco-gift,.cake-body,.flame,
+    .l,.name-tag,.cake-wrap,.btn,.hint{animation:none!important}
+    .bless,.name-tag,.cake-wrap,.btn,.hint{opacity:1!important}
+    .l{opacity:1!important;transform:rotate(var(--r))!important}
+  }
+</style>
+</head>
+<body>
+
+<div class="sky"></div>
+<div class="clouds">
+  <div class="cloud c1"></div>
+  <div class="cloud c2"></div>
+  <div class="cloud c3"></div>
+  <div class="cloud c4"></div>
+  <div class="balloon b1"></div>
+  <div class="balloon b2"></div>
+  <div class="balloon b3"></div>
+  <div class="balloon b4"></div>
+
+  <!-- 彩旗 -->
+  <svg class="bunting" viewBox="0 0 1200 110" preserveAspectRatio="xMidYMin meet" aria-hidden="true">
+    <path d="M0 8 Q600 62 1200 8" fill="none" stroke="#3B2B4F" stroke-width="4" stroke-linecap="round"/>
+    <g stroke="#3B2B4F" stroke-width="4" stroke-linejoin="round">
+      <path d="M22 11.8 H66 L44 51.8 Z" fill="#FFD34E"/>
+      <path d="M110 18.6 H154 L132 58.6 Z" fill="#FF7EA8"/>
+      <path d="M198 24.2 H242 L220 64.2 Z" fill="#56D6B5"/>
+      <path d="M286 28.6 H330 L308 68.6 Z" fill="#63C7FF"/>
+      <path d="M374 31.9 H418 L396 71.9 Z" fill="#A78BFF"/>
+      <path d="M462 34.0 H506 L484 74.0 Z" fill="#FFD34E"/>
+      <path d="M550 34.9 H594 L572 74.9 Z" fill="#FF7EA8"/>
+      <path d="M638 34.7 H682 L660 74.7 Z" fill="#56D6B5"/>
+      <path d="M726 33.4 H770 L748 73.4 Z" fill="#63C7FF"/>
+      <path d="M814 30.8 H858 L836 70.8 Z" fill="#A78BFF"/>
+      <path d="M902 27.1 H946 L924 67.1 Z" fill="#FFD34E"/>
+      <path d="M990 22.3 H1034 L1012 62.3 Z" fill="#FF7EA8"/>
+      <path d="M1078 16.3 H1122 L1100 56.3 Z" fill="#56D6B5"/>
+    </g>
+  </svg>
+
+  <!-- 手绘小图案 -->
+  <svg class="doodle d-heart" viewBox="0 0 44 44" aria-hidden="true">
+    <path d="M22 37C8 27 5 17 11 11.5C16.5 6.5 21.5 11 22 14.5C22.5 11 27.5 6.5 33 11.5C39 17 36 27 22 37Z"
+          fill="#FF7EA8" stroke="#3B2B4F" stroke-width="3.5" stroke-linejoin="round"/>
+  </svg>
+  <svg class="doodle d-star" viewBox="0 0 44 44" aria-hidden="true">
+    <path d="M22 5l4.8 10.2 11.2 1.5-8.2 7.8 2 11.1-9.8-5.3-9.8 5.3 2-11.1-8.2-7.8 11.2-1.5z"
+          fill="#FFD34E" stroke="#3B2B4F" stroke-width="3.5" stroke-linejoin="round"/>
+  </svg>
+  <svg class="doodle d-spark" viewBox="0 0 44 44" aria-hidden="true">
+    <path d="M22 4l5 13 13 5-13 5-5 13-5-13-13-5 13-5z"
+          fill="#A78BFF" stroke="#3B2B4F" stroke-width="3.5" stroke-linejoin="round"/>
+  </svg>
+  <svg class="doodle d-flower" viewBox="0 0 44 44" aria-hidden="true">
+    <g stroke="#3B2B4F" stroke-width="3.2">
+      <circle cx="22" cy="11" r="7" fill="#FF7EA8"/>
+      <circle cx="33" cy="19" r="7" fill="#FF7EA8"/>
+      <circle cx="29" cy="32" r="7" fill="#FF7EA8"/>
+      <circle cx="15" cy="32" r="7" fill="#FF7EA8"/>
+      <circle cx="11" cy="19" r="7" fill="#FF7EA8"/>
+      <circle cx="22" cy="22" r="6" fill="#FFD34E"/>
+    </g>
+  </svg>
+  <svg class="doodle d-cloud" viewBox="0 0 52 44" aria-hidden="true">
+    <path d="M12 34a9 9 0 0 1 .8-18 11 11 0 0 1 20.6-2.6A8.4 8.4 0 0 1 40 34Z"
+          fill="#FFFFFF" stroke="#3B2B4F" stroke-width="3.4" stroke-linejoin="round"/>
+  </svg>
+  <svg class="doodle d-star2" viewBox="0 0 44 44" aria-hidden="true">
+    <path d="M22 6l4.2 9 9.8 1.3-7.2 6.9 1.8 9.8-8.6-4.7-8.6 4.7 1.8-9.8-7.2-6.9 9.8-1.3z"
+          fill="#56D6B5" stroke="#3B2B4F" stroke-width="3.5" stroke-linejoin="round"/>
+  </svg>
+  <svg class="doodle d-heart2" viewBox="0 0 44 44" aria-hidden="true">
+    <path d="M22 37C8 27 5 17 11 11.5C16.5 6.5 21.5 11 22 14.5C22.5 11 27.5 6.5 33 11.5C39 17 36 27 22 37Z"
+          fill="#FFB3C9" stroke="#3B2B4F" stroke-width="3.5" stroke-linejoin="round"/>
+  </svg>
+  <svg class="doodle d-spark2" viewBox="0 0 44 44" aria-hidden="true">
+    <path d="M22 4l5 13 13 5-13 5-5 13-5-13-13-5 13-5z"
+          fill="#63C7FF" stroke="#3B2B4F" stroke-width="3.5" stroke-linejoin="round"/>
+  </svg>
+  <svg class="doodle d-spark3" viewBox="0 0 44 44" aria-hidden="true">
+    <path d="M22 4l5 13 13 5-13 5-5 13-5-13-13-5 13-5z"
+          fill="#FFD34E" stroke="#3B2B4F" stroke-width="3.5" stroke-linejoin="round"/>
+  </svg>
+
+  <!-- 礼物盒 · 左 -->
+  <svg class="deco-gift g-left" viewBox="0 0 130 148" aria-hidden="true">
+    <g stroke="#3B2B4F" stroke-width="5" stroke-linejoin="round" transform="rotate(-4 65 100)">
+      <rect x="20" y="66" width="90" height="64" rx="8" fill="#FF9CC0"/>
+      <rect x="56" y="66" width="18" height="64" fill="#FFD34E"/>
+      <rect x="12" y="46" width="106" height="22" rx="6" fill="#FF7EA8"/>
+      <rect x="56" y="46" width="18" height="22" fill="#FFD34E"/>
+      <path d="M65 46C50 24 32 30 36 46Z" fill="#FFD34E"/>
+      <path d="M65 46C80 24 98 30 94 46Z" fill="#FFD34E"/>
+      <circle cx="65" cy="46" r="7" fill="#FFD34E"/>
+    </g>
+  </svg>
+
+  <!-- 礼物盒 · 右 -->
+  <svg class="deco-gift g-right" viewBox="0 0 150 150" aria-hidden="true">
+    <g stroke="#3B2B4F" stroke-width="5" stroke-linejoin="round" transform="rotate(4 75 100)">
+      <rect x="16" y="74" width="72" height="56" rx="7" fill="#8FD8FF"/>
+      <rect x="46" y="74" width="14" height="56" fill="#FFF6E6"/>
+      <rect x="9" y="58" width="86" height="18" rx="5" fill="#63C7FF"/>
+      <rect x="46" y="58" width="14" height="18" fill="#FFF6E6"/>
+      <path d="M53 58C40 40 25 45 28 58Z" fill="#FFD34E"/>
+      <path d="M53 58C66 40 81 45 78 58Z" fill="#FFD34E"/>
+      <circle cx="53" cy="58" r="6" fill="#FFD34E"/>
+
+      <rect x="84" y="104" width="56" height="36" rx="6" fill="#C3B2FF"/>
+      <rect x="107" y="104" width="12" height="36" fill="#FF9F5A"/>
+      <rect x="79" y="92" width="66" height="14" rx="4" fill="#A78BFF"/>
+      <rect x="107" y="92" width="12" height="14" fill="#FF9F5A"/>
+      <path d="M113 92C102 76 90 80 92 92Z" fill="#FF9F5A"/>
+      <path d="M113 92C124 76 136 80 134 92Z" fill="#FF9F5A"/>
+      <circle cx="113" cy="92" r="5" fill="#FF9F5A"/>
+    </g>
+  </svg>
+  <!-- 悬浮祝福气泡（内容由脚本按 BLESSINGS 生成） -->
+  <div id="blessLayer"></div>
+</div>
+<canvas id="fx"></canvas>
+
+<main>
+  <h1 class="title" id="title">
+    <span class="l" data-c="生">生</span>
+    <span class="l" data-c="日">日</span>
+    <span class="l" data-c="快">快</span>
+    <span class="l" data-c="乐">乐</span>
+  </h1>
+
+  <div class="name-tag"><i></i><span>今天是 <b id="whoName">亲爱的同学</b> 的生日</span><i></i></div>
+
+  <div class="cake-wrap">
+    <div class="rays" aria-hidden="true"></div>
+    <svg class="cake" id="cake" viewBox="0 0 360 340" role="img" aria-label="生日蛋糕">
+      <defs>
+        <linearGradient id="gPink" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFA6C2"/><stop offset="1" stop-color="#F2548A"/>
+        </linearGradient>
+        <linearGradient id="gCream" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFE9C4"/>
+        </linearGradient>
+        <linearGradient id="gButter" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFF3D2"/><stop offset="1" stop-color="#FFD98B"/>
+        </linearGradient>
+        <linearGradient id="gFlame" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#FFE873"/><stop offset=".55" stop-color="#FFA53C"/><stop offset="1" stop-color="#FF6B3D"/>
+        </linearGradient>
+        <radialGradient id="gGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0" stop-color="#FFD34E" stop-opacity=".55"/>
+          <stop offset="1" stop-color="#FFD34E" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <!-- 地面投影 -->
+      <ellipse cx="180" cy="312" rx="128" ry="15" fill="#3B2B4F" opacity=".10"/>
+
+      <g class="cake-body">
+        <!-- 烛光晕 -->
+        <ellipse class="glow" cx="180" cy="36" rx="110" ry="66" fill="url(#gGlow)"/>
+
+        <!-- 盘子 -->
+        <ellipse cx="180" cy="302" rx="146" ry="19" fill="#FFFFFF" stroke="#3B2B4F" stroke-width="7"/>
+
+        <!-- 上层蛋糕 -->
+        <rect x="98" y="106" width="164" height="92" rx="18" fill="url(#gButter)" stroke="#3B2B4F" stroke-width="7"/>
+
+        <!-- 蜡烛 x3 -->
+        <g class="candle">
+          <circle class="smoke" cx="150" cy="30" r="5" fill="#C9BFD6"/>
+          <circle class="smoke s2" cx="150" cy="30" r="4" fill="#C9BFD6"/>
+          <circle class="smoke s3" cx="150" cy="30" r="3" fill="#C9BFD6"/>
+          <rect x="144" y="52" width="12" height="62" rx="6" fill="#FFFDF7" stroke="#3B2B4F" stroke-width="5"/>
+          <rect x="145" y="68" width="10" height="9" rx="4" fill="#56D6B5"/>
+          <rect x="145" y="88" width="10" height="9" rx="4" fill="#56D6B5"/>
+          <line x1="150" y1="52" x2="150" y2="45" stroke="#3B2B4F" stroke-width="4" stroke-linecap="round"/>
+          <g class="flame">
+            <path d="M150 44 C159 36 161 24 150 8 C139 24 141 36 150 44 Z" fill="url(#gFlame)" stroke="#3B2B4F" stroke-width="5" stroke-linejoin="round"/>
+            <path d="M150 39 C154 34 155 28 150 21 C145 28 146 34 150 39 Z" fill="#FFF7D6"/>
+          </g>
+        </g>
+        <g class="candle">
+          <circle class="smoke" cx="180" cy="30" r="5" fill="#C9BFD6"/>
+          <circle class="smoke s2" cx="180" cy="30" r="4" fill="#C9BFD6"/>
+          <circle class="smoke s3" cx="180" cy="30" r="3" fill="#C9BFD6"/>
+          <rect x="174" y="52" width="12" height="62" rx="6" fill="#FFFDF7" stroke="#3B2B4F" stroke-width="5"/>
+          <rect x="175" y="68" width="10" height="9" rx="4" fill="#FF7EA8"/>
+          <rect x="175" y="88" width="10" height="9" rx="4" fill="#FF7EA8"/>
+          <line x1="180" y1="52" x2="180" y2="45" stroke="#3B2B4F" stroke-width="4" stroke-linecap="round"/>
+          <g class="flame">
+            <path d="M180 44 C189 36 191 24 180 8 C169 24 171 36 180 44 Z" fill="url(#gFlame)" stroke="#3B2B4F" stroke-width="5" stroke-linejoin="round"/>
+            <path d="M180 39 C184 34 185 28 180 21 C175 28 176 34 180 39 Z" fill="#FFF7D6"/>
+          </g>
+        </g>
+        <g class="candle">
+          <circle class="smoke" cx="210" cy="30" r="5" fill="#C9BFD6"/>
+          <circle class="smoke s2" cx="210" cy="30" r="4" fill="#C9BFD6"/>
+          <circle class="smoke s3" cx="210" cy="30" r="3" fill="#C9BFD6"/>
+          <rect x="204" y="52" width="12" height="62" rx="6" fill="#FFFDF7" stroke="#3B2B4F" stroke-width="5"/>
+          <rect x="205" y="68" width="10" height="9" rx="4" fill="#63C7FF"/>
+          <rect x="205" y="88" width="10" height="9" rx="4" fill="#63C7FF"/>
+          <line x1="210" y1="52" x2="210" y2="45" stroke="#3B2B4F" stroke-width="4" stroke-linecap="round"/>
+          <g class="flame">
+            <path d="M210 44 C219 36 221 24 210 8 C199 24 201 36 210 44 Z" fill="url(#gFlame)" stroke="#3B2B4F" stroke-width="5" stroke-linejoin="round"/>
+            <path d="M210 39 C214 34 215 28 210 21 C205 28 206 34 210 39 Z" fill="#FFF7D6"/>
+          </g>
+        </g>
+
+        <!-- 上层奶油 -->
+        <path d="M98 108 H262 V128 C262 149 221 149 221 128 C221 149 180 149 180 128 C180 149 139 149 139 128 C139 149 98 149 98 128 Z"
+              fill="url(#gCream)" stroke="#3B2B4F" stroke-width="7" stroke-linejoin="round"/>
+
+        <!-- 上层糖针 -->
+        <rect x="112" y="146" width="12" height="5" rx="2.5" fill="#FFD34E" transform="rotate(-24 118 148)"/>
+        <rect x="222" y="152" width="12" height="5" rx="2.5" fill="#A78BFF" transform="rotate(18 228 154)"/>
+        <rect x="150" y="168" width="12" height="5" rx="2.5" fill="#56D6B5" transform="rotate(28 156 170)"/>
+        <rect x="196" y="162" width="12" height="5" rx="2.5" fill="#FF9F5A" transform="rotate(-16 202 164)"/>
+
+        <!-- 下层蛋糕 -->
+        <rect x="46" y="190" width="268" height="102" rx="18" fill="url(#gPink)" stroke="#3B2B4F" stroke-width="7"/>
+
+        <!-- 下层奶油 -->
+        <path d="M46 190 H314 V210
+                 C314 232 280.5 232 280.5 210
+                 C280.5 232 247 232 247 210
+                 C247 232 213.5 232 213.5 210
+                 C213.5 232 180 232 180 210
+                 C180 232 146.5 232 146.5 210
+                 C146.5 232 113 232 113 210
+                 C113 232 79.5 232 79.5 210
+                 C79.5 232 46 232 46 210 Z"
+              fill="url(#gCream)" stroke="#3B2B4F" stroke-width="7" stroke-linejoin="round"/>
+
+        <!-- 表情 -->
+        <circle cx="162" cy="248" r="8" fill="#3B2B4F"/>
+        <circle cx="198" cy="248" r="8" fill="#3B2B4F"/>
+        <circle cx="164.6" cy="245" r="2.6" fill="#FFFFFF"/>
+        <circle cx="200.6" cy="245" r="2.6" fill="#FFFFFF"/>
+        <ellipse cx="138" cy="260" rx="11" ry="7" fill="#FF5C8A" opacity=".45"/>
+        <ellipse cx="222" cy="260" rx="11" ry="7" fill="#FF5C8A" opacity=".45"/>
+        <path d="M166 262 Q180 276 194 262" fill="none" stroke="#3B2B4F" stroke-width="5.5" stroke-linecap="round"/>
+
+        <!-- 下体糖针 -->
+        <rect x="60" y="240" width="12" height="5" rx="2.5" fill="#63C7FF" transform="rotate(24 66 242)"/>
+        <rect x="286" y="248" width="12" height="5" rx="2.5" fill="#FFD34E" transform="rotate(-20 292 250)"/>
+        <rect x="104" y="276" width="12" height="5" rx="2.5" fill="#A78BFF" transform="rotate(-28 110 278)"/>
+        <rect x="238" y="276" width="12" height="5" rx="2.5" fill="#56D6B5" transform="rotate(22 244 278)"/>
+
+        <!-- 小星星 -->
+        <g class="twinkle" fill="#FFD34E" stroke="#3B2B4F" stroke-width="3" stroke-linejoin="round">
+          <path d="M42 108 l5 11 11 5 -11 5 -5 11 -5 -11 -11 -5 11 -5 z"/>
+        </g>
+        <g class="twinkle t2" fill="#FF7EA8" stroke="#3B2B4F" stroke-width="3" stroke-linejoin="round">
+          <path d="M320 132 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4 z"/>
+        </g>
+        <g class="twinkle t3" fill="#63C7FF" stroke="#3B2B4F" stroke-width="3" stroke-linejoin="round">
+          <path d="M64 60 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4 z"/>
+        </g>
+        <g class="twinkle t4" fill="#56D6B5" stroke="#3B2B4F" stroke-width="3" stroke-linejoin="round">
+          <path d="M300 52 l5 11 11 5 -11 5 -5 11 -5 -11 -11 -5 11 -5 z"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+
+  <button class="btn" id="wishBtn">吹蜡烛许愿</button>
+  <div class="hint">点一下屏幕 · <b>撒一把彩纸</b></div>
+</main>
+
+<button class="music" id="musicBtn" aria-label="音乐">♪</button>
+
+<div class="overlay" id="overlay">
+  <div class="card">
+    <div class="card-scroll">
+      <h2>新的一岁，闪闪发光</h2>
+      <div class="sub">A LETTER FOR YOU</div>
+      <div class="dots"><i></i><i></i><i></i><i></i></div>
+
+      <p class="hi">生日快乐呀，<span id="shortName">浩杰</span>！</p>
+
+      <p>愿你眼里有光，心里有火，走过的每一步都算数；<br>
+         愿你想要的都能拥有，得不到的都能慢慢释怀。</p>
+
+      <p>愿你在兵荒马乱的日子里，依然笑得像个孩子；<br>
+         愿你所到之处遍地阳光，所做之事皆如所愿。</p>
+
+      <p>同窗这几年，能和你一起走过这段又笨拙又闪亮的青春，是我的荣幸。往后的路还很长——愿你步履不停，也愿你偶尔回头时，我们还在。</p>
+
+      <p>新的一岁，慢慢来。<br>不着急成为谁，去成为你想成为的样子就好。</p>
+
+      <div class="sign">
+        <span id="signName">—— 你的同学JHD</span>
+        <small id="signDate">2026 · 10 · 21</small>
+      </div>
+
+      <div class="actions">
+        <button class="ghost" id="moreBtn">再撒一次彩纸</button>
+        <button class="ghost pri" id="closeBtn">收下啦</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ====== 可修改 ====== */
+  var CONFIG = {
+    name: "陈浩杰",
+    short: "浩杰",
+    sign: "—— 你的同学JHD",
+    date: "2026 · 10 · 21"
+  };
+
+  /* 悬浮祝福气泡：文案 + 文字颜色。第 1/2/3/4 条在左，第 5/6/7/8 条在右 */
+  var BLESSINGS = [
+    ["愿望成真", "#E8477B"],
+    ["天天开心", "#E07A2B"],
+    ["考试全会", "#2B93D1"],
+    ["贪吃不胖", "#2BAE8E"],
+    ["一夜好眠", "#7B5FE0"],
+    ["一路生花", "#E8477B"],
+    ["万事胜意", "#2B93D1"],
+    ["越来越帅", "#2BAE8E"]
+  ];
+
+  document.title = CONFIG.name + "，生日快乐";
+  document.getElementById("whoName").textContent = CONFIG.name;
+  document.getElementById("shortName").textContent = CONFIG.short;
+  document.getElementById("signName").textContent = CONFIG.sign;
+  document.getElementById("signDate").textContent = CONFIG.date;
+
+  var body = document.body;
+  var title = document.getElementById("title");
+  var cake = document.getElementById("cake");
+  var wishBtn = document.getElementById("wishBtn");
+  var overlay = document.getElementById("overlay");
+  var closeBtn = document.getElementById("closeBtn");
+  var moreBtn = document.getElementById("moreBtn");
+  var musicBtn = document.getElementById("musicBtn");
+
+  /* ====== 悬浮祝福气泡 ====== */
+  var blessLayer = document.getElementById("blessLayer");
+  BLESSINGS.slice(0, 8).forEach(function (b, i) {
+    var el = document.createElement("div");
+    el.className = "bless t" + (i + 1);
+    el.style.color = b[1];
+    el.textContent = b[0];
+    el.setAttribute("role", "button");
+    el.setAttribute("aria-label", b[0] + "，点一下撒彩纸");
+    el.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var r = el.getBoundingClientRect();
+      burst(r.left + r.width / 2, r.top + r.height / 2, SMALL ? 14 : 20, { speed: 8 });
+      pop();
+    });
+    blessLayer.appendChild(el);
+  });
+
+  /* ====== 画布 ====== */
+  var cv = document.getElementById("fx");
+  var ctx = cv.getContext("2d");
+  var W = 0, H = 0, DPR = 1;
+  var SMALL = false;
+  var parts = [];
+  var COLORS = ["#FF7EA8", "#FFD34E", "#56D6B5", "#63C7FF", "#A78BFF", "#FF9F5A", "#FFFFFF"];
+  var INK = "#3B2B4F";
+
+  function resize() {
+    DPR = Math.min(window.devicePixelRatio || 1, 2);
+    W = window.innerWidth;
+    H = window.innerHeight;
+    SMALL = W < 760;
+    cv.width = Math.floor(W * DPR);
+    cv.height = Math.floor(H * DPR);
+    cv.style.width = W + "px";
+    cv.style.height = H + "px";
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    fitScreen();
+  }
+
+  /* 屏幕太矮时整体等比缩小，避免手机上被裁掉 */
+  var mainEl = document.querySelector("main");
+  function fitScreen() {
+    mainEl.style.transform = "none";
+    var kids = mainEl.children;
+    if (!kids.length) return;
+    var cs = window.getComputedStyle(mainEl);
+    var padT = parseFloat(cs.paddingTop) || 0;
+    var padB = parseFloat(cs.paddingBottom) || 0;
+    var top = kids[0].getBoundingClientRect().top;
+    var bot = kids[kids.length - 1].getBoundingClientRect().bottom;
+    var h = bot - top;
+    var avail = window.innerHeight - padT - padB - 4;
+    if (h <= avail) return;
+    var s = Math.max(avail / h, 0.62);
+    mainEl.style.transform = "scale(" + s.toFixed(3) + ")";
+  }
+
+  function rnd(a, b) { return a + Math.random() * (b - a); }
+  function pick(arr) { return arr[(Math.random() * arr.length) | 0]; }
+
+  /* 生成一片彩纸 */
+  function makePiece(x, y, opt) {
+    opt = opt || {};
+    var shapes = ["rect", "circle", "tri", "star"];
+    var sp = opt.speed || 7;
+    var ang = opt.angle === undefined ? rnd(0, Math.PI * 2) : opt.angle;
+    var speed = opt.speed === undefined ? rnd(3, 10) : rnd(sp * 0.5, sp * 1.6);
+    return {
+      x: x, y: y,
+      vx: Math.cos(ang) * speed + (opt.vx || 0),
+      vy: Math.sin(ang) * speed + (opt.vy || 0),
+      size: rnd(5, 11),
+      color: pick(COLORS),
+      shape: pick(shapes),
+      rot: rnd(0, Math.PI * 2),
+      vr: rnd(-0.22, 0.22),
+      life: 1,
+      decay: opt.decay || rnd(0.0035, 0.007),
+      sway: rnd(0.6, 1.8),
+      phase: rnd(0, 6.28),
+      gravity: opt.gravity === undefined ? 0.16 : opt.gravity,
+      spark: !!opt.spark
+    };
+  }
+
+  function burst(x, y, n, opt) {
+    opt = opt || {};
+    for (var i = 0; i < n; i++) {
+      parts.push(makePiece(x, y, {
+        speed: opt.speed || 9,
+        gravity: opt.gravity,
+        decay: opt.decay,
+        spark: opt.spark
+      }));
+    }
+    trim();
+  }
+
+  function cannon(x, y, dir, n) {
+    for (var i = 0; i < n; i++) {
+      var p = makePiece(x, y, { speed: 13, gravity: 0.13 });
+      var a = dir + rnd(-0.42, 0.42);
+      p.vx = Math.cos(a) * rnd(9, 17);
+      p.vy = Math.sin(a) * rnd(9, 17);
+      parts.push(p);
+    }
+    trim();
+  }
+
+  function trim() {
+    var max = SMALL ? 210 : 460;
+    if (parts.length > max) parts.splice(0, parts.length - max);
+  }
+
+  var lastT = performance.now();
+
+  function loop(now) {
+    var dt = Math.min(now - lastT, 46);
+    lastT = now;
+    var k = dt / 16.667;
+
+    ctx.clearRect(0, 0, W, H);
+
+    for (var i = parts.length - 1; i >= 0; i--) {
+      var p = parts[i];
+      p.vy += p.gravity * k;
+      p.vx *= Math.pow(0.992, k);
+      p.vy *= Math.pow(0.995, k);
+      p.phase += 0.06 * k;
+      p.x += (p.vx + Math.sin(p.phase) * p.sway * 0.5) * k;
+      p.y += p.vy * k;
+      p.rot += p.vr * k;
+      p.life -= p.decay * k;
+
+      if (p.life <= 0 || p.y > H + 60 || p.x < -80 || p.x > W + 80) {
+        parts.splice(i, 1);
+        continue;
+      }
+
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rot);
+      ctx.globalAlpha = Math.min(1, p.life * 2.2);
+      ctx.fillStyle = p.color;
+      ctx.strokeStyle = INK;
+      ctx.lineWidth = 1.6;
+      ctx.lineJoin = "round";
+
+      var s = p.size;
+      if (p.shape === "rect") {
+        ctx.fillRect(-s / 2, -s / 4, s, s / 2);
+        ctx.strokeRect(-s / 2, -s / 4, s, s / 2);
+      } else if (p.shape === "circle") {
+        ctx.beginPath();
+        ctx.arc(0, 0, s * 0.42, 0, 6.2832);
+        ctx.fill();
+        ctx.stroke();
+      } else if (p.shape === "tri") {
+        ctx.beginPath();
+        ctx.moveTo(0, -s * 0.5);
+        ctx.lineTo(s * 0.48, s * 0.4);
+        ctx.lineTo(-s * 0.48, s * 0.4);
+        ctx.closePath();
+        ctx.fill();
+        ctx.stroke();
+      } else {
+        star(ctx, 0, 0, 5, s * 0.5, s * 0.22);
+        ctx.fill();
+        ctx.stroke();
+      }
+      ctx.restore();
+    }
+    ctx.globalAlpha = 1;
+
+    /* 背景飘落的彩纸 */
+    if (Math.random() < 0.055) {
+      var top = makePiece(rnd(0, W), -20, { speed: 1, gravity: 0.03, decay: 0.0016 });
+      top.vx = rnd(-0.5, 0.5);
+      top.vy = rnd(0.8, 2.2);
+      top.size = rnd(4, 9);
+      parts.push(top);
+    }
+
+    requestAnimationFrame(loop);
+  }
+
+  function star(c, cx, cy, spikes, outer, inner) {
+    var rot = -Math.PI / 2;
+    var step = Math.PI / spikes;
+    c.beginPath();
+    c.moveTo(cx + Math.cos(rot) * outer, cy + Math.sin(rot) * outer);
+    for (var i = 0; i < spikes; i++) {
+      rot += step;
+      c.lineTo(cx + Math.cos(rot) * inner, cy + Math.sin(rot) * inner);
+      rot += step;
+      c.lineTo(cx + Math.cos(rot) * outer, cy + Math.sin(rot) * outer);
+    }
+    c.closePath();
+  }
+
+  /* ====== 指针彩纸 ====== */
+  var lastPx = 0, lastPy = 0;
+  window.addEventListener("pointermove", function (e) {
+    var dx = e.clientX - lastPx, dy = e.clientY - lastPy;
+    if (dx * dx + dy * dy > 380) {
+      lastPx = e.clientX;
+      lastPy = e.clientY;
+      var p = makePiece(e.clientX, e.clientY, { speed: 1.6, gravity: 0.02, decay: 0.016 });
+      p.vx = rnd(-1.2, 1.2);
+      p.vy = rnd(-1.2, 1.2);
+      p.size = rnd(4, 8);
+      parts.push(p);
+      trim();
+    }
+  }, { passive: true });
+
+  window.addEventListener("pointerdown", function (e) {
+    if (e.target.closest && e.target.closest("button,.bless")) return;
+    burst(e.clientX, e.clientY, SMALL ? 12 : 16, { speed: 8 });
+    pop();
+  });
+
+  /* ====== 交互 ====== */
+  var wished = false;
+
+  wishBtn.addEventListener("click", function () {
+    if (wished) { openCard(); return; }
+    wished = true;
+    blow();
+
+    wishBtn.textContent = "祝你如愿！";
+    wishBtn.style.background = "#FFD34E";
+    wishBtn.style.color = "#3B2B4F";
+
+    var r = cake.getBoundingClientRect();
+    var cx = r.left + r.width / 2;
+    var cy = r.top + r.height * 0.32;
+
+    setTimeout(function () { cannon(0, H + 20, -Math.PI / 3.1, SMALL ? 24 : 34); }, 60);
+    setTimeout(function () { cannon(W, H + 20, -Math.PI + Math.PI / 3.1, SMALL ? 24 : 34); }, 120);
+    setTimeout(function () { burst(cx, cy, SMALL ? 30 : 44, { speed: 11, gravity: 0.15 }); pop(); }, 320);
+    setTimeout(function () { burst(cx, cy - 40, SMALL ? 22 : 30, { speed: 9 }); }, 620);
+
+    setTimeout(openCard, 1000);
+  });
+
+  function blow() {
+    cake.classList.add("blown");
+  }
+
+  function openCard() {
+    overlay.classList.add("show");
+    if (!wished) { wished = true; blow(); }
+  }
+
+  closeBtn.addEventListener("click", function () { overlay.classList.remove("show"); });
+  overlay.addEventListener("click", function (e) { if (e.target === overlay) overlay.classList.remove("show"); });
+  moreBtn.addEventListener("click", function () {
+    cannon(0, H + 20, -Math.PI / 3.2, SMALL ? 26 : 40);
+    cannon(W, H + 20, -Math.PI + Math.PI / 3.2, SMALL ? 26 : 40);
+    burst(W / 2, H * 0.42, SMALL ? 24 : 36, { speed: 10 });
+    pop();
+  });
+  window.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") overlay.classList.remove("show");
+  });
+
+  /* ====== 音效 + 音乐 ====== */
+  var actx = null, playing = false, musicTimer = null;
+
+  function ensureAudio() {
+    if (!actx) {
+      var AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC) return null;
+      try { actx = new AC(); } catch (err) { return null; }
+    }
+    if (actx.state === "suspended") actx.resume();
+    return actx;
+  }
+
+  /* 短促的“啵”声 */
+  function pop() {
+    var ac = ensureAudio();
+    if (!ac) return;
+    var t = ac.currentTime;
+    var o = ac.createOscillator();
+    var g = ac.createGain();
+    o.type = "sine";
+    o.frequency.setValueAtTime(720, t);
+    o.frequency.exponentialRampToValueAtTime(180, t + 0.11);
+    g.gain.setValueAtTime(0.0001, t);
+    g.gain.exponentialRampToValueAtTime(0.10, t + 0.012);
+    g.gain.exponentialRampToValueAtTime(0.0001, t + 0.14);
+    o.connect(g); g.connect(ac.destination);
+    o.start(t); o.stop(t + 0.16);
+  }
+
+  var N = { G4: 392.00, A4: 440.00, B4: 493.88, C5: 523.25, D5: 587.33, E5: 659.25, F5: 698.46, G5: 783.99 };
+  var MELODY = [
+    ["G4", .75], ["G4", .25], ["A4", 1], ["G4", 1], ["C5", 1], ["B4", 2],
+    ["G4", .75], ["G4", .25], ["A4", 1], ["G4", 1], ["D5", 1], ["C5", 2],
+    ["G4", .75], ["G4", .25], ["G5", 1], ["E5", 1], ["C5", 1], ["B4", 1], ["A4", 2],
+    ["F5", .75], ["F5", .25], ["E5", 1], ["C5", 1], ["D5", 1], ["C5", 2.6]
+  ];
+
+  function tone(freq, at, dur, peak, type) {
+    var o = actx.createOscillator();
+    var o2 = actx.createOscillator();
+    var g = actx.createGain();
+    var lp = actx.createBiquadFilter();
+    o.type = type || "triangle";
+    o2.type = "sine";
+    o.frequency.value = freq;
+    o2.frequency.value = freq * 2;
+    lp.type = "lowpass";
+    lp.frequency.value = 3200;
+
+    var g2 = actx.createGain();
+    g2.gain.value = 0.16;
+
+    o.connect(lp); o2.connect(g2); g2.connect(lp);
+    lp.connect(g); g.connect(actx.destination);
+
+    g.gain.setValueAtTime(0.0001, at);
+    g.gain.exponentialRampToValueAtTime(peak, at + 0.02);
+    g.gain.exponentialRampToValueAtTime(peak * 0.5, at + dur * 0.5);
+    g.gain.exponentialRampToValueAtTime(0.0001, at + dur);
+
+    o.start(at); o.stop(at + dur + 0.04);
+    o2.start(at); o2.stop(at + dur + 0.04);
+  }
+
+  function playMelody() {
+    var beat = 0.5;
+    var start = actx.currentTime + 0.2;
+    var t = 0;
+    for (var i = 0; i < MELODY.length; i++) {
+      var f = N[MELODY[i][0]];
+      var beats = MELODY[i][1];
+      tone(f, start + t * beat, beats * beat * 0.9, 0.07, "triangle");
+      if (i % 6 === 0) tone(f / 2, start + t * beat, beats * beat * 1.6, 0.028, "sine");
+      t += beats;
+    }
+    musicTimer = setTimeout(function () {
+      if (playing) playMelody();
+    }, (t * beat + 1) * 1000);
+  }
+
+  function startMusic() {
+    if (playing) return;
+    if (!ensureAudio()) return;
+    playing = true;
+    musicBtn.classList.add("on");
+    playMelody();
+  }
+  function stopMusic() {
+    playing = false;
+    musicBtn.classList.remove("on");
+    if (musicTimer) { clearTimeout(musicTimer); musicTimer = null; }
+    if (actx && actx.state === "running") actx.suspend();
+  }
+  musicBtn.addEventListener("click", function () {
+    if (playing) stopMusic(); else startMusic();
+  });
+
+  /* ====== 启动 ====== */
+  var rt = null;
+  window.addEventListener("resize", function () {
+    if (rt) clearTimeout(rt);
+    rt = setTimeout(function () { rt = null; resize(); }, 120);
+  });
+  window.addEventListener("orientationchange", function () {
+    setTimeout(resize, 280);
+  });
+  resize();
+  requestAnimationFrame(loop);
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function () { fitScreen(); });
+  }
+
+  requestAnimationFrame(function () {
+    body.classList.add("go");
+    setTimeout(function () { title.classList.add("ready"); }, 1300);
+    setTimeout(function () {
+      cannon(0, H + 20, -Math.PI / 3.4, 26);
+      cannon(W, H + 20, -Math.PI + Math.PI / 3.4, 26);
+    }, 700);
+  });
+
+  /* 首次点击页面时开启音乐 */
+  function onceStart() {
+    startMusic();
+    window.removeEventListener("pointerdown", onceStart);
+  }
+  window.addEventListener("pointerdown", onceStart);
+})();
+</script>
+</body>
+</html>
